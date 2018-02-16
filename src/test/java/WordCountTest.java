@@ -12,6 +12,12 @@ import java.util.stream.Stream;
 
 
 public class WordCountTest {
+
+    /**
+     * Negative test case
+     *
+     * @throws InterruptedException
+     */
     @Test
     public void testFailed() throws InterruptedException {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
@@ -46,7 +52,7 @@ public class WordCountTest {
     }
 
     @Test
-    public void testCount() throws InterruptedException {
+    public void testCount() {
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         PrintStream ps = new PrintStream(baos);
         String[] data = getTestText();
